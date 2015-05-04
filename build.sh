@@ -20,4 +20,3 @@ cp $GOPATH/bin/fleet-ui tmp/
 curl -s -L https://github.com/coreos/fleet/releases/download/v${FLEET_VERSION}/fleet-v${FLEET_VERSION}-linux-amd64.tar.gz | \
   tar xz fleet-v${FLEET_VERSION}-linux-amd64/fleetctl -O > tmp/fleetctl
 chmod +x tmp/fleetctl
-docker build -t purpleworks/fleet-ui:$DOCKER_IMAGE_VERSION .
